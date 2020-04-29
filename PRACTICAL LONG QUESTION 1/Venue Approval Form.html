@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Venue Approval Form.css">
+    <script type="text/javascript" src="Venue Approval Form.js"></script>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo" id="logo">
+        <h1 id="title">借用场地申请表格<br>
+            Venue Approval Form
+        </h1>
+    </header>
+
+    <div id="outer-container">
+        <form action="" name="venueApprovalForm" onsubmit="return formValidation()" method="get">
+            <div id="form-area">
+                <div id="venue" class="part">
+                    <h2>A. 使用场地：<br>
+                        Venue to be approved:</h2>
+
+                    <div class="form-field">
+                        <input type="radio" name="venue" value="main auditorium" id="main-auditorium">
+                        <label for="main-auditorium">
+                            大礼堂 - Main Auditorium
+                        </label>
+
+                        <br>
+
+                        <input type="radio" name="venue" value="auditorium A" id="auditorium-A">
+                        <label for="auditorium-A">讲堂 - A Auditorium A</label>
+
+                        <br>
+
+                        <input type="radio" name="venue" value="auditorium-B" id="auditorium-B">
+                        <label for="auditorium-B">讲堂 B - Auditorium B</label>
+
+                        <br>
+
+                        <input type="radio" name="venue" value="meeting room 125" id="meeting-room-125">
+                        <label for="meeting-room-125">
+                            会议室125 - Meeting Room 125
+                        </label>
+
+                        <br>
+
+                        <input type="radio" name="venue" value="hua yuan" id="hua-yuan">
+                        <label for="hua-yuan">华园 - Hua Yuan</label>
+
+                        <br>
+                        
+                        <input type="radio" name="venue" value="lecture halls" id="lecture-halls">
+                        <label for="lecture-halls">冷气课室 - Lecture Halls: </label>
+                        <br>
+                        <select name="selectLectureHall" id="select-lecture-hall">
+                            <option value="default">Select lecture hall</option>
+                            <option value="2C">2C</option>
+                            <option value="2D">2D</option>
+                            <option value="2E">2E</option>
+                            <option value="2F">2F</option>
+                            <option value="2G">2G</option>
+                            <option value="2H">2H</option>
+                            <option value="3E">3E</option>
+                            <option value="3F">3F</option>
+                        </select>
+                        
+                        <br>
+
+                        <input type="radio" name="venue" value="LG stage" id="LG-stage">
+                        <label for="LG-stage">《南方之星》舞台 LG Stage</label>
+
+                        <br>
+
+                        <input type="radio" name="venue" value="others" id="others">
+                        <label for="others">其它 - Others: </label>
+                        <br>
+                        <input type="text" name="otherVenue" id="other-venue">
+                    </div>
+                </div>
+
+                <div id="other-details" class="part">
+                    <label for="applicant-name">B. 申请人姓名 - Applicant's Name:</label>
+                    <br>
+                    <input type="text" name="applicantName" id="applicant-name">
+
+                    <br>
+
+                    <label for="phone-number">C. 手机号码 - H/P No:</label>
+                    <br>
+                    <input type="number" name="phoneNumber" id="phone-number">
+
+                    <br>
+
+                    <label for="apply-from">D. 团体/班级/部门 - Apply from:</label>
+                    <br>
+                    <input type="text" name="applyFrom" id="apply-from">
+
+                    <br>
+
+                    <label for="event">E. 活动名称 - Event: </label>
+                    <br>
+                    <input type="text" name="event" id="event">
+
+                    <br>
+
+                    <label for="date-time">F. 活动日期/时间 - Date/Time: </label>
+                    <br>
+                    <div id="date-time">
+                        <span class="small-label">Start:</span> 
+                        <br>
+                        <input type="date" name="startDate" id="start-date" value="2000-12-25">  
+                        <input type="time" name="startTime" id="start-time" value="00:00"> 
+                        <br>
+                        <span class="small-label">End:</span> 
+                        <br>
+                        <input type="date" name="endDate" id="end-date" value="2000-12-25">
+                        <input type="time" name="endTime" id="end-time" value="00:00">
+                        <br>
+                    </div>
+                    
+                    <label for="no-of-participants">G. No. of Participants - 参与人数: </label>
+                    <br>
+                    <input type="number" name="noOfParticipants" id="no-of-participants">
+
+                    <br>
+                </div>
+                <p id="ps">*若有特别情况，本处将保留最终决定权。<br>
+                    The Asset Management & General Affairs Office reserves the right to change or refuse any booking.
+                </p>
+            </div>
+            <input type="submit" value="SUBMIT" id="submit">
+        </form>
+    </div>
+</body>
+</html>

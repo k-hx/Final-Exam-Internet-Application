@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Game &hearts; Sonic Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Practical Question 3.css">
+</head>
+<body>
+    <div id="outer-container">
+        <!--top-->
+        <div id="top">
+            <p id="title">Mario Game &hearts; Sonic Game</p> 
+        </div>
+
+        <!--bottom-->
+        <div id="bottom">
+            <!--left-->
+            <div id="bottom-left">
+                <form action="">
+                    <div class="form-field">
+                        <label for="name">New Player Name:</label><br>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div class="form-field">
+                        <input type="radio" name="difficulty" value="easy" id="easy">
+                        <label for="easy">Easy</label>
+                        
+                        <br>
+
+                        <input type="radio" name="difficulty" value="medium" id="medium">
+                        <label for="medium">Medium</label>
+
+                        <br>
+
+                        <input type="radio" name="difficulty" value="difficult" id="difficult">
+                        <label for="difficult">Difficult</label>
+                    </div>
+
+                    <div class="form-field">
+                        <select name="group">
+                            <option value="group 1" selected>Group 1</option>
+                            <option value="group 2">Group 2</option>
+                            <option value="group 3">Group 3</option>
+                        </select>
+                    </div>
+
+                    <h3 id="start">Start now!!!</h3>
+                </form>
+            </div>
+            <div id="bottom-right">
+                <div id="bottom-right-top">
+                    <img src="Mario-and-Sonic-at-the-Olympic-Games.jpg" alt="" id="Mario-and-Sonic">
+                </div>
+                    
+                <div id="bottom-right-middle">
+                    <p id="player">Player: Terry</p>
+                </div>
+
+                <div id="bottom-right-bottom">
+                    <table id="play">
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="button" value="Push U"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+
+                        <tr>                                
+                            <td><input type="button" value="Push L"></td>
+                            <td>&nbsp;</td>
+                            <td><input type="button" value="Push R"></td>
+                        </tr>
+
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td><input type="button" value="Push D"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</body>
+</html>

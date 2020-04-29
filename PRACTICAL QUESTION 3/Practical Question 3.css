@@ -1,0 +1,77 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+div#outer-container {
+    border: 10px solid lightcoral;
+    width: 50%;
+    margin: auto;
+    background-color: steelblue;
+    color: white;
+}
+
+div#top {
+    border-bottom: 10px solid lightcoral;
+}
+
+div#bottom {
+    display: flex;
+}
+
+div#bottom-left {
+    width: 40%;
+    border-right: 10px solid lightcoral;
+}
+
+div.form-field,
+h3#start {
+    padding: 10px;
+}
+
+img#Mario-and-Sonic {
+    width: 90%;
+    height: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+div#bottom-right {
+    width: 60%;
+}
+
+div#bottom-right-top {
+    border-bottom: 10px solid lightcoral;
+    display: flex;
+}
+
+div#bottom-right-middle {
+    border-bottom: 10px solid lightcoral;
+}
+
+p#title,
+p#player {
+    margin: 2px;
+    text-align: center;
+}
+
+table#play {
+    width: 100%;
+    text-align: center;
+}
+
+table#play,
+table#play tr,
+table#play td {
+    border: 2px solid gainsboro;
+    border-collapse: collapse;
+}
+
+input[type="button"] {
+    width: 100%;
+    border: none;
+    border-radius: .3em;
+    padding: 3px;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+}

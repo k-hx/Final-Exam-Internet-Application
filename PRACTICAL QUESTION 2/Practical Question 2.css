@@ -1,0 +1,13 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+table,
+th,
+td {
+    border: 2px solid lightblue;
+}
+
+td {
+    padding: 5px;
+}

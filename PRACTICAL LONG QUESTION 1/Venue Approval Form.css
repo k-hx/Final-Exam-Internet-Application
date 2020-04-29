@@ -1,0 +1,160 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(196, 232, 238);
+    margin-bottom: 20px;
+}
+
+img#logo {
+    display: block;
+    width: 200px;
+    height: 80px;
+}
+
+h1#title {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+img#logo,
+h1#title {
+    margin: 0 10px;
+}
+
+div#outer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div#form-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.part {
+    padding: 20px;
+    width: 35%;
+    margin: 20px 30px;   
+    border: 10px double lightblue;         
+}
+
+div#venue h2 {
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    border-bottom: 3px solid lightblue;
+    font-weight: 400;
+}
+
+label {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+input[type="radio"]:hover,
+div#venue label:hover {
+    cursor: pointer;
+}
+
+div#venue input[type="radio"]:checked + label{
+    background-color: rgb(219, 235, 245);
+}
+
+select,
+input[type="text"],
+input[type="number"] {
+    margin-left: 20px;
+    font-size: medium;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: rgb(46, 47, 48);
+    border: 2px solid lightslategrey;
+    width: 80%;
+    padding: 3px;
+}
+
+input[type="date"],
+input[type="time"] {
+    font-size: medium;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: rgb(46, 47, 48);
+    border: 2px solid lightslategrey;
+    padding: 3px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+span.small-label {
+    display: inline-block;
+    width: 50px;
+}
+
+div#date-time {
+    padding: 0 15px;
+}
+
+input#submit {
+    border: 3px solid lightblue;
+    background-color: rgba(205, 229, 236, 0.247);
+    color: rgb(88, 119, 145);
+    font-weight: 700;
+    font-size: large;
+    padding: 5px 10px;
+    font-family: 'Noto Sans SC', sans-serif;
+    margin: 10px auto 50px;
+    display: block;
+}
+
+input#submit:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px lightblue;
+}
+
+@media screen and (max-width: 875px) {
+    div.part {
+        width: 60%;
+    }
+
+    p#ps {
+        width: 70%;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    h1#title {
+        font-size: 26px;
+    }
+
+    div.part {
+        width: 80%;
+    }
+
+    label {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Christmas Wish List.css">
+</head>
+<body>
+    <header>
+        <div id="header-text">
+            <h1>Merry Christmas!</h1>
+            <h2>Send your wish list to Santa Claus!</h2>
+        </div>
+    </header>
+    <form action="mailto:D190326C@sc.edu.my" enctype="text/plain" method="post" name="wishListForm" onsubmit="return formValidation()">
+        <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+        </div>
+
+        <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea name="message" id="" cols="20" rows="5" placeholder="Write your message to Santa Claus here!"></textarea>
+        </div>
+
+        <div class="form-field">
+            <label for="wishlist">Your Christmas present wish list:</label>
+            <ol id="wishList-ol">
+                <li>
+                    <input type="text" name="present1" id="present1">
+                </li>
+
+                <li>
+                    <input type="text" name="present2" id="present2">
+                </li>
+
+                <li>
+                    <input type="text" name="present3" id="present3">
+                </li>
+
+                <li>
+                    <input type="text" name="present4" id="present4">
+                </li>
+
+                <li>
+                    <input type="text" name="present5" id="present5">
+                </li>
+            </ol>
+        </div>
+
+        <div class="form-field">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" placeholder="Where should Santa Claus deliver the presents?" cols="20" rows="5"></textarea>
+        </div>
+
+        <div class="form-field" id="submit">
+            <input type="submit" value="SEND" name="send" id="send-button">
+        </div>
+    </form>
+<script type="text/javascript" src="Christmas Wish List.js"></script>
+</body>
+</html>
